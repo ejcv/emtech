@@ -20,6 +20,7 @@ year_dictionary = {
     12: 'December'
 }
 
+
 def calculate_sales_per_product(refund=False):
     """
     A function that gets the number of sales per product
@@ -37,7 +38,15 @@ def calculate_sales_per_product(refund=False):
     return sales_per_product_list
 
 
-def top_selling_and_worst_selling():
+def calculate_searches_per_product():
+    searches_per_product_list = empty_list.copy()
+    for search in lifestore_searches:
+        # we modify the position [id-1][1] and increase by one each time it is called
+        searches_per_product_list[search[1] - 1][1] += 1
+    return searches_per_product_list
+
+
+def sort_products_by_sales():
     """
     A function that calculates the number of sales per product and sorts them from best to worst
     and prints them in stdout
@@ -51,21 +60,68 @@ def top_selling_and_worst_selling():
     return sales_per_product_list
 
 
-def most_and_less_searched_products():
+def sort_products_by_searches():
     """
     A function that calculates the number of searches per product and sorts them from best to worst
     and prints them in stdout
     :return searches_per_product_list: an ordered list
     """
     # holds the index and the number of searches of each product_id
-    searches_per_product_list = empty_list.copy()
-    for search in lifestore_searches:
-        # we modify the position [id-1][1] and increase by one each time it is called
-        searches_per_product_list[search[1] - 1][1] += 1
-    # Sort the list from minimum to maximum
+    searches_per_product_list = calculate_searches_per_product()
+
     quick_sort(searches_per_product_list, lambda x: x[1])
 
     return searches_per_product_list
+
+
+def get_categories():
+    sales_per_category_list = []
+    previous_category = None
+    for product in lifestore_products:
+        category = product[3]
+        if category != previous_category:
+            # Append to the list a list that holds [category, # sales]
+            sales_per_category_list.append([category, 0])
+        previous_category = category
+
+    return sales_per_category_list
+
+
+def calculate_by_categories(array):
+    for element in array:
+        product_id = element[0]
+        product_category = lifestore_products[product_id - 1][3]
+        element.append(product_category)
+
+    per_category_list = []
+    previous_category = array[0][2]
+    accumulation_category = 0
+    for product in array:
+        category = product[2]
+        if category == previous_category:
+            # if the category is t same, accumulate the number of sales
+            accumulation_category += product[1]
+        else:
+            per_category_list.append([category, accumulation_category])
+        previous_category = category
+
+    return per_category_list
+
+
+def sort_categories_by_sales():
+    sales_per_product = calculate_sales_per_product()
+    sales_per_category_list = calculate_by_categories(sales_per_product)
+    quick_sort(sales_per_category_list, lambda x: x[1])
+
+    return sales_per_category_list
+
+
+def sort_categories_by_searches():
+    searches_per_product = calculate_searches_per_product()
+    searches_per_category_list = calculate_by_categories(searches_per_product)
+    quick_sort(searches_per_category_list, lambda x: x[1])
+
+    return searches_per_category_list
 
 
 def best_and_worst_reviewed_products():
@@ -114,7 +170,7 @@ def calculate_monthly_sales():
         month = int(sale[3].split('/')[1])
         if sale[4] == 0:
             # Increment the sales per month if the in the monthly_sales_list
-            monthly_sales_list[month-1][1] += 1
+            monthly_sales_list[month - 1][1] += 1
             total_concreted_sales += 1
 
     quick_sort(monthly_sales_list, lambda x: x[1])
@@ -122,7 +178,7 @@ def calculate_monthly_sales():
 
 
 def option_1():
-    sales_per_product_list = top_selling_and_worst_selling()
+    sales_per_product_list = sort_products_by_sales()
     # show the top 10 selling products
     # Not the best approach, I did not know about reverse method
     # Gonna leave it like this as a reminder
@@ -132,12 +188,29 @@ def option_1():
             f'{index}.- {sales_per_product_list[-index][1]} sells for'
             f' {lifestore_products[sales_per_product_list[-index][0] - 1][1]}')
     print('\n')
-    searches_per_product_list = most_and_less_searched_products()
+
+    searches_per_product_list = sort_products_by_searches()
     print('The top 10 searched products are: ')
     for index in range(1, 11):
         print(
             f'{index}.- {searches_per_product_list[-index][1]} searches for'
             f' {lifestore_products[searches_per_product_list[-index][0] - 1][1]}')
+    print('\n')
+
+    sales_per_categories_list = sort_categories_by_sales()
+    print(f'The 3 worst selling categories are:')
+    for index in range(3):
+        print(
+            f'{index+1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]}'
+        )
+    print('\n')
+
+    searches_per_categories_list = sort_categories_by_searches()
+    print(f'The 3 least searched categories are:')
+    for index in range(3):
+        print(
+            f'{index + 1}.- {searches_per_categories_list[index][1]} for {searches_per_categories_list[index][0]}'
+        )
 
 
 def option_2():
@@ -162,9 +235,9 @@ def option_3():
     sorted_monthly_sales_list, total_concreted_sales = calculate_monthly_sales()
     sorted_monthly_sales_list.reverse()
     print(f'The total amount of income was: {total_revenue}')
-    print(f'The average monthly income was: {total_revenue/12:.2f}')
+    print(f'The average monthly income was: {total_revenue / 12:.2f}')
     print(f'The total concreted sales of 2020 are: {total_concreted_sales}')
     print(f'The monthly sales are:')
     print('\n')
     for index, month in enumerate(sorted_monthly_sales_list):
-        print(f'{index+1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
+        print(f'{index + 1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
