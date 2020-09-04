@@ -65,7 +65,7 @@ def sort_products_by_sales():
 def sort_products_by_searches():
     """
     A function that calculates the number of searches per product and sorts them from best to worst
-    and prints them in stdout
+    and prints them
     :return searches_per_product_list: an ordered list
     """
     # holds the index and the number of searches of each product_id
@@ -76,20 +76,13 @@ def sort_products_by_searches():
     return searches_per_product_list
 
 
-def get_categories():
-    sales_per_category_list = []
-    previous_category = None
-    for product in lifestore_products:
-        category = product[3]
-        if category != previous_category:
-            # Append to the list a list that holds [category, # sales]
-            sales_per_category_list.append([category, 0])
-        previous_category = category
-
-    return sales_per_category_list
-
-
 def calculate_by_categories(array):
+    """
+    A function that receives an array with information per product
+     and returns that information per category
+    :param array: list that contains elements with the form [product_id, some_information]
+    :return per_category_list: a list that contains elements with the form [category, info_per_category]
+    """
     for element in array:
         product_id = element[0]
         product_category = lifestore_products[product_id - 1][3]
@@ -180,6 +173,11 @@ def calculate_monthly_sales():
 
 
 def option_1():
+    """
+    Function that prints the top 10 selling products, the top 10 searched products,
+    the 3 worst selling categories and the least 3 searched categories.
+    :return:
+    """
     sales_per_product_list = sort_products_by_sales()
     # show the top 10 selling products
     # Not the best approach, I did not know about reverse method
@@ -216,6 +214,11 @@ def option_1():
 
 
 def option_2():
+    """
+    Function that prints the top 10 products with the best average review score and
+    the worst 10 rated products
+    :return:
+    """
     average_score_per_product = best_and_worst_reviewed_products()
     print('The top 10 rated products are: ')
     # Not the best approach, I did not know about reverse method
@@ -233,6 +236,11 @@ def option_2():
 
 
 def option_3():
+    """
+    Function that prints the total revenue, the average monthly income,
+    the total concreted sales (no refund) and the monthly sales.
+    :return:
+    """
     total_revenue = calculate_total_revenue()
     sorted_monthly_sales_list, total_concreted_sales = calculate_monthly_sales()
     sorted_monthly_sales_list.reverse()
@@ -245,6 +253,10 @@ def option_3():
 
 
 def option_4():
+    """
+    Function that prints all the analysis in the previous options into a .txt file
+    :return:
+    """
     # Redirect the standard output to a file
     original_stdout = sys.stdout  # Save a reference to the original standard output
 
