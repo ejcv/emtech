@@ -1,6 +1,6 @@
 # emtech
 This repository contains the two projects given as assignments in the Santander-EMTECH TECH scholarship in data science.
-## Project 1
+## PROJECT 1
 In this project we were asked to write a program that generates a report for the managers of our hypothetical store “LifeStore”. We were given the information in the form of python lists. The elements of this lists contained the following:
 
 - lifestore_products [id_product, name, price, category, stock]
@@ -24,7 +24,7 @@ Total income and average monthly sales, annual total and months with more sales 
 
 The program is written as a python script that is runned directly on the terminal, as a challenge and as an exercise for the EMTECH scholarship it was written avoiding to use any external libraries and built-in functions.
 
-## CODE
+### CODE
 The code was splitted into different files and functions to reuse code and to maintain order.
 
 * lifestore_file.py
@@ -50,10 +50,13 @@ This file contains all the business logic. Here we calculate all of the operatio
 main.py
 Finally, this file contains the logic that interacts with the user, the login authentication, the selection of the analysis and the exit of the program. 
 
-## EXECUTION
+### EXECUTION
 To run the project move to the location it was downloaded and type:
   cd Project-1
   python main.py
 
 Depending on your python installation, it may be needed to run as:
   python3 main.py
+
+## PROJECT 2
+Coming soon!!
