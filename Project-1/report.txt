@@ -11,7 +11,7 @@ The top 10 selling products are:
 10.- 9 sells for SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2
 
 
-The top 10 searched products are:
+The top 10 searched products are: 
 1.- 263 searches for SSD Kingston A400, 120GB, SATA III, 2.5'', 7mm
 2.- 107 searches for SSD Adata Ultimate SU800, 256GB, SATA III, 2.5'', 7mm
 3.- 60 searches for Tarjeta Madre ASUS micro ATX TUF B450M-PLUS GAMING, S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
@@ -24,16 +24,26 @@ The top 10 searched products are:
 10.- 30 searches for Procesador Intel Core i3-9100F, S-1151, 3.60GHz, Quad-Core, 6MB Cache (9na. Generación - Coffee Lake)
 
 
-The 3 worst selling categories are:
-1.- 104 for tarjetas de video
-2.- 129 for tarjetas madre
-3.- 164 for discos duros
+Sales by category are:
+1.- 104 for procesadores with 9 products
+2.- 94 for discos duros with 13 products
+3.- 49 for tarjetas madre with 18 products
+4.- 26 for tarjetas de video with 19 products
+5.- 5 for audifonos with 13 products
+6.- 2 for pantallas with 12 products
+7.- 2 for bocinas with 10 products
+8.- 1 for memorias usb with 2 products
 
 
-The 3 least searched categories are:
-1.- 444 for tarjetas de video
-2.- 606 for tarjetas madre
-3.- 760 for discos duros
+Searches per category are:
+1.- 463 for discos duros with 13 products
+2.- 222 for procesadores with 9 products
+3.- 137 for tarjetas madre with 18 products
+4.- 82 for tarjetas de video with 19 products
+5.- 64 for audifonos with 13 products
+6.- 56 for pantallas with 12 products
+7.- 9 for bocinas with 10 products
+8.- 0 for memorias usb with 2 products
 
 
 The top 10 rated products are: 
@@ -75,7 +85,7 @@ The worst 10 rated products are:
 The total amount of income was: 737916
 The average monthly income was: 61493.00
 The total concreted sales of 2020 are: 274 
-n
+
 The monthly sales are:
 1 .- 74 concreted sales in April
 2 .- 52 concreted sales in January

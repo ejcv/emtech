@@ -4,8 +4,6 @@ from quick_sort import quick_sort
 import sys
 
 number_products = len(lifestore_products)
-# empty list of [id_product, smth_of_interest]
-empty_list = [[i + 1, 0] for i in range(number_products)]
 
 year_dictionary = {
     1: 'January',
@@ -45,7 +43,7 @@ def calculate_searches_per_product():
         A function that calculates the number of searches per product
         :return: A list of lists with the product id and the total sales per product [product_id, total_sales]
     """
-    searches_per_product_list = empty_list.copy()
+    searches_per_product_list = [[i + 1, 0] for i in range(number_products)]
     for search in lifestore_searches:
         # we modify the position [id-1][1] and increase by one each time it is called
         searches_per_product_list[search[1] - 1][1] += 1
@@ -85,24 +83,30 @@ def calculate_by_categories(array):
     A function that receives an array with information per product
      and returns that information per category
     :param array: list that contains elements with the form [product_id, some_information]
-    :return per_category_list: a list that contains elements with the form [category, info_per_category]
+    :return per_category_list: a list that contains elements with the form [category, info_per_category, products_per_category]
     """
     for element in array:
         product_id = element[0]
         product_category = lifestore_products[product_id - 1][3]
         element.append(product_category)
-
     per_category_list = []
     previous_category = array[0][2]
     accumulation_category = 0
+    products_per_category = 0
+    # Append a dummy element to the array to consider the last category
+    array.append([0, 0, 'dummy'])
     for product in array:
         category = product[2]
-        if category == previous_category:
-            # if the category is t same, accumulate the number of sales
-            accumulation_category += product[1]
-        else:
-            per_category_list.append([category, accumulation_category])
+        if category != previous_category:
+            per_category_list.append([previous_category, accumulation_category, products_per_category])
+            accumulation_category = 0
+            products_per_category = 0
+
         previous_category = category
+        accumulation_category += product[1]
+        products_per_category += 1
+    # Delete the dummy element
+    del array[-1]
 
     return per_category_list
 
@@ -182,6 +186,7 @@ def option_1():
     the 3 worst selling categories and the least 3 searched categories.
     :return:
     """
+    show_worst = 60;
     sales_per_product_list = sort_products_by_sales()
     # show the top 10 selling products
     # Not the best approach, I did not know about reverse method
@@ -193,13 +198,13 @@ def option_1():
             f' {lifestore_products[sales_per_product_list[-index][0] - 1][1]}')
     print('\n')
 
-    # show the 10 worst selling products
-    print('The 10 worst selling products are: ')
-    for index in range(10):
-        print(
-            f'{index+1}.- {sales_per_product_list[index][1]} sells for'
-            f' {lifestore_products[sales_per_product_list[index][0] - 1][1]}')
-    print('\n')
+    # # show the worst selling products
+    # print(f'The {show_worst} worst selling products are: ')
+    # for index in range(show_worst):
+    #     print(
+    #         f'{index+1}.- {sales_per_product_list[index][1]} sells for'
+    #         f' {lifestore_products[sales_per_product_list[index][0] - 1][1]}')
+    # print('\n')
 
     searches_per_product_list = sort_products_by_searches()
     print('The top 10 searched products are: ')
@@ -209,28 +214,30 @@ def option_1():
             f' {lifestore_products[searches_per_product_list[-index][0] - 1][1]}')
     print('\n')
 
-    print('The 10 least searched products are: ')
-    for index in range(10):
-        print(
-            f'{index+1}.- {searches_per_product_list[index][1]} searches for'
-            f' {lifestore_products[searches_per_product_list[index][0] - 1][1]}')
-    print('\n')
+    # print(f'The {show_worst} least searched products are: ')
+    # for index in range(show_worst):
+    #     print(
+    #         f'{index+1}.- {searches_per_product_list[index][1]} searches for'
+    #         f' {lifestore_products[searches_per_product_list[index][0] - 1][1]}')
+    # print('\n')
 
     sales_per_categories_list = sort_categories_by_sales()
     sales_per_categories_list.reverse()
     print(f'Sales by category are:')
-    for index in range(3):
+    for index in range(len(sales_per_categories_list)):
         print(
-            f'{index + 1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]}'
+            f'{index + 1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]} with '
+            f'{sales_per_categories_list[index][2]} products'
         )
     print('\n')
 
     searches_per_categories_list = sort_categories_by_searches()
     searches_per_categories_list.reverse()
     print(f'Searches per category are:')
-    for index in range(3):
+    for index in range(len(searches_per_categories_list)):
         print(
-            f'{index + 1}.- {searches_per_categories_list[index][1]} for {searches_per_categories_list[index][0]}'
+            f'{index + 1}.- {searches_per_categories_list[index][1]} for {searches_per_categories_list[index][0]} '
+            f'with {searches_per_categories_list[index][2]} products'
         )
 
 
