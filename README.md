@@ -1,4 +1,4 @@
-# emtech
+# EMTECH SCHOLARSHIP PROJECTS
 This repository contains the two projects given as assignments in the Santander-EMTECH TECH scholarship in data science.
 ## PROJECT 1
 In this project we were asked to write a program that generates a report for the managers of our hypothetical store “LifeStore”. We were given the information in the form of python lists. The elements of this lists contained the following:
@@ -34,20 +34,20 @@ The code was splitted into different files and functions to reuse code and to ma
 
 Almost all the code contains comments and docstrings, variables were named in a way that are easy to understand (there may be some exceptions).
 
-lifestore_file.py
+#### lifestore_file.py
 This file contains all the data provided by the management, as mentioned in the introduction. There are three lists, each of them contain lists with different information. 
 
-lifestore_products [id_product, name, price, category, stock]
-lifestore_sales [id_sale, id_product, score (from 1 to 5), date, refund (1 for true or 0 to false)]
-lifestore_searches [id_search, id product]
+- lifestore_products [id_product, name, price, category, stock]
+- lifestore_sales [id_sale, id_product, score (from 1 to 5), date, refund (1 for true or 0 to false)]
+- lifestore_searches [id_search, id product]
 
-quick_sort.py
+#### quick_sort.py
 To avoid the usage of the built-in method sort() associated to lists, we implemented a version of quick sort. This function takes a list as input and acts in place ordering the list in ascending order. 
 
-operations.py
+#### operations.py
 This file contains all the business logic. Here we calculate all of the operations needed to show the results to the management.
 
-main.py
+#### main.py
 Finally, this file contains the logic that interacts with the user, the login authentication, the selection of the analysis and the exit of the program. 
 
 ### EXECUTION
