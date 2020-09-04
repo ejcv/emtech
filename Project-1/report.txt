@@ -87,13 +87,13 @@ The average monthly income was: 61493.00
 The total concreted sales of 2020 are: 274 
 
 The monthly sales are:
-1 .- 74 concreted sales in April
-2 .- 52 concreted sales in January
+1 .- 52 concreted sales in January
+2 .- 40 concreted sales in February
 3 .- 49 concreted sales in March
-4 .- 40 concreted sales in February
+4 .- 74 concreted sales in April
 5 .- 34 concreted sales in May
-6 .- 11 concreted sales in July
-7 .- 11 concreted sales in June
+6 .- 11 concreted sales in June
+7 .- 11 concreted sales in July
 8 .- 3 concreted sales in August
 9 .- 0 concreted sales in September
 10 .- 0 concreted sales in October

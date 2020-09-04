@@ -176,7 +176,7 @@ def calculate_monthly_sales():
             monthly_sales_list[month - 1][1] += 1
             total_concreted_sales += 1
 
-    quick_sort(monthly_sales_list, lambda x: x[1])
+    #quick_sort(monthly_sales_list, lambda x: x[1])
     return monthly_sales_list, total_concreted_sales
 
 
@@ -270,13 +270,12 @@ def option_3():
     :return:
     """
     total_revenue = calculate_total_revenue()
-    sorted_monthly_sales_list, total_concreted_sales = calculate_monthly_sales()
-    sorted_monthly_sales_list.reverse()
+    monthly_sales_list, total_concreted_sales = calculate_monthly_sales()
     print(f'The total amount of income was: {total_revenue}')
     print(f'The average monthly income was: {total_revenue / 12:.2f}')
     print(f'The total concreted sales of 2020 are: {total_concreted_sales} \n')
     print(f'The monthly sales are:')
-    for index, month in enumerate(sorted_monthly_sales_list):
+    for index, month in enumerate(monthly_sales_list):
         print(f'{index + 1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
 
 
