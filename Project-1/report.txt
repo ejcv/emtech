@@ -37,45 +37,45 @@ The 3 least searched categories are:
 
 
 The top 10 rated products are: 
-1.- 69.00/5 stars for TV Monitor LED 24TL520S-PU 24, HD, Widescreen, HDMI, Negro
-2.- 40.00/5 stars for Logitech Audífonos Gamer G635 7.1, Alámbrico, 1.5 Metros, 3.5mm, Negro/Azul
-3.- 35.00/5 stars for TCL Smart TV LED 55S425 54.6, 4K Ultra HD, Widescreen, Negro
-4.- 25.00/5 stars for Logitech Audífonos Gamer G332, Alámbrico, 2 Metros, 3.5mm, Negro/Rojo
-5.- 25.00/5 stars for Tarjeta Madre Gigabyte XL-ATX TRX40 Designare, S-sTRX4, AMD TRX40, 256GB DDR4 para AMD
-6.- 20.00/5 stars for Tarjeta de Video MSI AMD Mech Radeon RX 5500 XT MECH Gaming OC, 8GB 128-bit GDDR6, PCI Express 4.0
-7.- 19.13/5 stars for SSD Adata Ultimate SU800, 256GB, SATA III, 2.5'', 7mm
-8.- 19.00/5 stars for SSD Crucial MX500, 1TB, SATA III, M.2
-9.- 17.00/5 stars for Cougar Audífonos Gamer Phontum Essential, Alámbrico, 1.9 Metros, 3.5mm, Negro.
-10.- 16.00/5 stars for HyperX Audífonos Gamer Cloud Flight para PC/PS4/PS4 Pro, Inalámbrico, USB, 3.5mm, Negro
-11.- 15.24/5 stars for SSD Kingston A400, 120GB, SATA III, 2.5'', 7mm
-12.- 15.00/5 stars for Tarjeta de Video Zotac NVIDIA GeForce GTX 1660 Ti, 6GB 192-bit GDDR6, PCI Express x16 3.0
-13.- 15.00/5 stars for Tarjeta de Video Sapphire AMD Pulse Radeon RX 5500 XT Gaming, 8GB 128-bit GDDR6, PCI Express 4.0
-14.- 15.00/5 stars for Procesador Intel Core i5-9600K, S-1151, 3.70GHz, Six-Core, 9MB Smart Cache (9na. Generiación - Coffee Lake)
-15.- 15.00/5 stars for Tarjeta de Video MSI NVIDIA GeForce GTX 1050 Ti OC, 4GB 128-bit GDDR5, PCI Express x16 3.0
-16.- 15.00/5 stars for Procesador AMD Ryzen 3 3300X S-AM4, 3.80GHz, Quad-Core, 16MB L2 Cache
-17.- 13.86/5 stars for Procesador Intel Core i7-9700K, S-1151, 3.60GHz, 8-Core, 12MB Smart Cache (9na. Generación Coffee Lake)
-18.- 13.00/5 stars for Tarjeta Madre MSI ATX B450 TOMAHAWK MAX, S-AM4, AMD B450, 64GB DDR4 para AMD
-19.- 12.71/5 stars for Tarjeta Madre ASUS micro ATX TUF B450M-PLUS GAMING, S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
-20.- 12.00/5 stars for SSD Kingston UV500, 480GB, SATA III, mSATA
+1.- 5.00/5 stars for Tarjeta de Video MSI AMD Mech Radeon RX 5500 XT MECH Gaming OC, 8GB 128-bit GDDR6, PCI Express 4.0
+2.- 5.00/5 stars for Logitech Audífonos Gamer G635 7.1, Alámbrico, 1.5 Metros, 3.5mm, Negro/Azul
+3.- 5.00/5 stars for Logitech Audífonos Gamer G332, Alámbrico, 2 Metros, 3.5mm, Negro/Rojo
+4.- 5.00/5 stars for Tarjeta de Video ASUS AMD Radeon RX 570, 4GB 256-bit GDDR5, PCI Express 3.0
+5.- 5.00/5 stars for TV Monitor LED 24TL520S-PU 24, HD, Widescreen, HDMI, Negro
+6.- 5.00/5 stars for TCL Smart TV LED 55S425 54.6, 4K Ultra HD, Widescreen, Negro
+7.- 5.00/5 stars for Kit Memoria RAM Corsair Dominator Platinum DDR4, 3200MHz, 16GB (2x 8GB), Non-ECC, CL16, XMP
+8.- 5.00/5 stars for Tarjeta Madre Gigabyte XL-ATX TRX40 Designare, S-sTRX4, AMD TRX40, 256GB DDR4 para AMD
+9.- 5.00/5 stars for Procesador AMD Ryzen 3 3300X S-AM4, 3.80GHz, Quad-Core, 16MB L2 Cache
+10.- 5.00/5 stars for SSD Western Digital WD Blue 3D NAND, 2TB, M.2
+11.- 5.00/5 stars for Procesador Intel Core i7-9700K, S-1151, 3.60GHz, 8-Core, 12MB Smart Cache (9na. Generación Coffee Lake)
+12.- 5.00/5 stars for SSD Crucial MX500, 1TB, SATA III, M.2
+13.- 5.00/5 stars for Kit SSD Kingston KC600, 1TB, SATA III, 2.5, 7mm
+14.- 5.00/5 stars for Procesador Intel Core i5-9600K, S-1151, 3.70GHz, Six-Core, 9MB Smart Cache (9na. Generiación - Coffee Lake)
+15.- 5.00/5 stars for Tarjeta de Video Zotac NVIDIA GeForce GTX 1660 Ti, 6GB 192-bit GDDR6, PCI Express x16 3.0
+16.- 5.00/5 stars for Tarjeta de Video Sapphire AMD Pulse Radeon RX 5500 XT Gaming, 8GB 128-bit GDDR6, PCI Express 4.0
+17.- 5.00/5 stars for Tarjeta de Video MSI NVIDIA GeForce GTX 1050 Ti OC, 4GB 128-bit GDDR5, PCI Express x16 3.0
+18.- 5.00/5 stars for Procesador Intel Core i9-9900K, S-1151, 3.60GHz, 8-Core, 16MB Smart Cache (9na. Generación Coffee Lake)
+19.- 4.87/5 stars for SSD Adata Ultimate SU800, 256GB, SATA III, 2.5'', 7mm
+20.- 4.81/5 stars for Procesador AMD Ryzen 5 2600, S-AM4, 3.40GHz, Six-Core, 16MB L3 Cache, con Disipador Wraith Stealth
 
 
 The worst 10 rated products are: 
-1.- 3.00/5 stars for Tarjeta Madre ASRock ATX H110 Pro BTC+, S-1151, Intel H110, 32GB DDR4, para Intel
-2.- 4.50/5 stars for Tarjeta Madre ASUS ATX PRIME Z390-A, S-1151, Intel Z390, HDMI, 64GB DDR4 para Intel 
-3.- 5.00/5 stars for Kit Memoria RAM Corsair Dominator Platinum DDR4, 3200MHz, 16GB (2x 8GB), Non-ECC, CL16, XMP
-4.- 5.17/5 stars for Tarjeta Madre AORUS micro ATX B450 AORUS M (rev. 1.0), S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
-5.- 6.00/5 stars for MSI GeForce 210, 1GB GDDR3, DVI, VGA, HDCP, PCI Express 2.0
-6.- 7.00/5 stars for Tarjeta de Video Gigabyte AMD Radeon R7 370 OC, 2GB 256-bit GDDR5, PCI Express 3.0
-7.- 7.11/5 stars for Tarjeta Madre ASRock Micro ATX B450M Steel Legend, S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
-8.- 7.43/5 stars for Procesador AMD Ryzen 5 2600, S-AM4, 3.40GHz, Six-Core, 16MB L3 Cache, con Disipador Wraith Stealth
-9.- 7.70/5 stars for Procesador Intel Core i3-9100F, S-1151, 3.60GHz, Quad-Core, 6MB Cache (9na. Generación - Coffee Lake)
-10.- 7.92/5 stars for Procesador AMD Ryzen 5 3600, S-AM4, 3.60GHz, 32MB L3 Cache, con Disipador Wraith Stealth
+1.- 1.00/5 stars for Tarjeta Madre ASRock ATX H110 Pro BTC+, S-1151, Intel H110, 32GB DDR4, para Intel
+2.- 1.00/5 stars for Tarjeta de Video Gigabyte AMD Radeon R7 370 OC, 2GB 256-bit GDDR5, PCI Express 3.0
+3.- 1.83/5 stars for Tarjeta Madre AORUS micro ATX B450 AORUS M (rev. 1.0), S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
+4.- 2.00/5 stars for Tarjeta Madre Gigabyte micro ATX GA-H110M-DS2, S-1151, Intel H110, 32GB DDR4 para Intel
+5.- 3.00/5 stars for Cougar Audífonos Gamer Phontum Essential, Alámbrico, 1.9 Metros, 3.5mm, Negro.
+6.- 4.00/5 stars for HyperX Audífonos Gamer Cloud Flight para PC/PS4/PS4 Pro, Inalámbrico, USB, 3.5mm, Negro
+7.- 4.00/5 stars for Tarjeta de Video Asus NVIDIA GeForce GTX 1050 Ti Phoenix, 4GB 128-bit GDDR5, PCI Express 3.0
+8.- 4.00/5 stars for MSI GeForce 210, 1GB GDDR3, DVI, VGA, HDCP, PCI Express 2.0
+9.- 4.14/5 stars for Tarjeta Madre ASUS micro ATX TUF B450M-PLUS GAMING, S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD
+10.- 4.23/5 stars for Procesador AMD Ryzen 5 3600, S-AM4, 3.60GHz, 32MB L3 Cache, con Disipador Wraith Stealth
 
 
 The total amount of income was: 737916
 The average monthly income was: 61493.00
 The total concreted sales of 2020 are: 274 
-
+n
 The monthly sales are:
 1 .- 74 concreted sales in April
 2 .- 52 concreted sales in January

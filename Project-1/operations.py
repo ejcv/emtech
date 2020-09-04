@@ -25,7 +25,7 @@ year_dictionary = {
 
 def calculate_sales_per_product(refund=False):
     """
-    A function that gets the number of sales per product
+    A function that calculates the number of sales per product
     :param refund: a flag that tells if returned and refunded products are taken into account
     :return: A list of lists with the product id and the total sales per product [product_id, total_sales]
     """
@@ -41,6 +41,10 @@ def calculate_sales_per_product(refund=False):
 
 
 def calculate_searches_per_product():
+    """
+        A function that calculates the number of searches per product
+        :return: A list of lists with the product id and the total sales per product [product_id, total_sales]
+    """
     searches_per_product_list = empty_list.copy()
     for search in lifestore_searches:
         # we modify the position [id-1][1] and increase by one each time it is called
@@ -125,7 +129,7 @@ def best_and_worst_reviewed_products():
     :return average_score_per_product: Sorted list of lists [product_id, average_score]
     """
     average_score_per_product = []
-    cumulative_score_per_product = empty_list.copy()
+    cumulative_score_per_product = [[i + 1, 0] for i in range(number_products)]
     # Copying the list of lists is not working due to python binding, the element lists are bound
     sales_per_product_list = calculate_sales_per_product()
 
