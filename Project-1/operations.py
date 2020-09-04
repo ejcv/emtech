@@ -1,5 +1,7 @@
 from lifestore_file import lifestore_products, lifestore_sales, lifestore_searches
 from quick_sort import quick_sort
+# Is needed to print into a file
+import sys
 
 number_products = len(lifestore_products)
 # empty list of [id_product, smth_of_interest]
@@ -201,7 +203,7 @@ def option_1():
     print(f'The 3 worst selling categories are:')
     for index in range(3):
         print(
-            f'{index+1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]}'
+            f'{index + 1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]}'
         )
     print('\n')
 
@@ -236,8 +238,21 @@ def option_3():
     sorted_monthly_sales_list.reverse()
     print(f'The total amount of income was: {total_revenue}')
     print(f'The average monthly income was: {total_revenue / 12:.2f}')
-    print(f'The total concreted sales of 2020 are: {total_concreted_sales}')
+    print(f'The total concreted sales of 2020 are: {total_concreted_sales} \n')
     print(f'The monthly sales are:')
-    print('\n')
     for index, month in enumerate(sorted_monthly_sales_list):
         print(f'{index + 1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
+
+
+def option_4():
+    # Redirect the standard output to a file
+    original_stdout = sys.stdout  # Save a reference to the original standard output
+
+    with open('report.txt', 'w') as f:
+        sys.stdout = f  # Change the standard output to the file we created.
+        option_1()
+        print('\n')
+        option_2()
+        print('\n')
+        option_3()
+        sys.stdout = original_stdout  # Reset the standard output to its original value

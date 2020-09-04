@@ -27,7 +27,8 @@ def analysis(option):
     switcher = {
         1: op.option_1,
         2: op.option_2,
-        3: op.option_3
+        3: op.option_3,
+        4: op.option_4
     }
     func = switcher.get(option, "Invalid option")
     return func()
@@ -44,6 +45,7 @@ else:
         1.- Top selling products and lagging products.
         2.- Reviewed products in the service.
         3.- Total income and average monthly sales, annual total and months with the most sales per year.
+        4.- Print the whole analysis into a text file.
     ''')
 
     analysis(int(input('Type the selected option: ')))
