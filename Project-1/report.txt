@@ -11,7 +11,7 @@ The top 10 selling products are:
 10.- 9 sells for SSD Kingston A2000 NVMe, 1TB, PCI Express 3.0, M2
 
 
-The top 10 searched products are: 
+The top 10 searched products are:
 1.- 263 searches for SSD Kingston A400, 120GB, SATA III, 2.5'', 7mm
 2.- 107 searches for SSD Adata Ultimate SU800, 256GB, SATA III, 2.5'', 7mm
 3.- 60 searches for Tarjeta Madre ASUS micro ATX TUF B450M-PLUS GAMING, S-AM4, AMD B450, HDMI, 64GB DDR4 para AMD

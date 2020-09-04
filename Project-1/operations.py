@@ -193,6 +193,14 @@ def option_1():
             f' {lifestore_products[sales_per_product_list[-index][0] - 1][1]}')
     print('\n')
 
+    # show the 10 worst selling products
+    print('The 10 worst selling products are: ')
+    for index in range(10):
+        print(
+            f'{index+1}.- {sales_per_product_list[index][1]} sells for'
+            f' {lifestore_products[sales_per_product_list[index][0] - 1][1]}')
+    print('\n')
+
     searches_per_product_list = sort_products_by_searches()
     print('The top 10 searched products are: ')
     for index in range(1, 11):
@@ -201,8 +209,16 @@ def option_1():
             f' {lifestore_products[searches_per_product_list[-index][0] - 1][1]}')
     print('\n')
 
+    print('The 10 least searched products are: ')
+    for index in range(10):
+        print(
+            f'{index+1}.- {searches_per_product_list[index][1]} searches for'
+            f' {lifestore_products[searches_per_product_list[index][0] - 1][1]}')
+    print('\n')
+
     sales_per_categories_list = sort_categories_by_sales()
-    print(f'The 3 worst selling categories are:')
+    sales_per_categories_list.reverse()
+    print(f'Sales by category are:')
     for index in range(3):
         print(
             f'{index + 1}.- {sales_per_categories_list[index][1]} for {sales_per_categories_list[index][0]}'
@@ -210,7 +226,8 @@ def option_1():
     print('\n')
 
     searches_per_categories_list = sort_categories_by_searches()
-    print(f'The 3 least searched categories are:')
+    searches_per_categories_list.reverse()
+    print(f'Searches per category are:')
     for index in range(3):
         print(
             f'{index + 1}.- {searches_per_categories_list[index][1]} for {searches_per_categories_list[index][0]}'
@@ -250,7 +267,7 @@ def option_3():
     sorted_monthly_sales_list.reverse()
     print(f'The total amount of income was: {total_revenue}')
     print(f'The average monthly income was: {total_revenue / 12:.2f}')
-    print(f'The total concreted sales of 2020 are: {total_concreted_sales} \nn')
+    print(f'The total concreted sales of 2020 are: {total_concreted_sales} \n')
     print(f'The monthly sales are:')
     for index, month in enumerate(sorted_monthly_sales_list):
         print(f'{index + 1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
