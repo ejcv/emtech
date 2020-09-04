@@ -11,7 +11,7 @@ def login():
     A function used to login that compares inputted user and password with the original ones
 
     Returns:
-        A boolean
+        A boolean that is true if the user was authenticated
     """
     current_user = input('Enter your user: ')
     current_password = getpass('Enter your password: ')
@@ -24,6 +24,11 @@ def login():
 
 
 def analysis(option):
+    """
+    A function that emulates a switch-case to select the analysis to perform
+    :param option: selected choice, inputed by user
+    :return: the associated function to the option it was selected
+    """
     switcher = {
         1: op.option_1,
         2: op.option_2,
@@ -35,17 +40,21 @@ def analysis(option):
 
 
 logged = login()
+finish = 'n'
 
-while not logged:
-    print('Retry login')
-    logged = login()
-else:
-    print('''
-    Available options:
-        1.- Top selling products and lagging products.
-        2.- Reviewed products in the service.
-        3.- Total income and average monthly sales, annual total and months with the most sales per year.
-        4.- Print the whole analysis into a text file.
-    ''')
+while finish != ('y' or 'Y'):
 
-    analysis(int(input('Type the selected option: ')))
+    if not logged:
+        print('Retry login')
+        logged = login()
+    else:
+        print('''
+        Available options:
+            1.- Top selling products and lagging products.
+            2.- Reviewed products in the service.
+            3.- Total income and average monthly sales, annual total and months with the most sales per year.
+            4.- Print the whole analysis into a text file.
+        ''')
+
+        analysis(int(input('Type the selected option: ')))
+        finish = input('Exit? (y/n): ')

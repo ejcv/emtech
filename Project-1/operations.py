@@ -238,7 +238,7 @@ def option_3():
     sorted_monthly_sales_list.reverse()
     print(f'The total amount of income was: {total_revenue}')
     print(f'The average monthly income was: {total_revenue / 12:.2f}')
-    print(f'The total concreted sales of 2020 are: {total_concreted_sales} \n')
+    print(f'The total concreted sales of 2020 are: {total_concreted_sales} \nn')
     print(f'The monthly sales are:')
     for index, month in enumerate(sorted_monthly_sales_list):
         print(f'{index + 1} .- {month[1]} concreted sales in {year_dictionary[month[0]]}')
