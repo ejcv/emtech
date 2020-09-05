@@ -272,7 +272,7 @@ def option_3():
     total_revenue = calculate_total_revenue()
     monthly_sales_list, total_concreted_sales = calculate_monthly_sales()
     print(f'The total amount of income was: {total_revenue}')
-    print(f'The average monthly income was: {total_revenue / 12:.2f}')
+    print(f'The average monthly income was: {total_revenue / 8:.2f}')
     print(f'The total concreted sales of 2020 are: {total_concreted_sales} \n')
     print(f'The monthly sales are:')
     for index, month in enumerate(monthly_sales_list):
