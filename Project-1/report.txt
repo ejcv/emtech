@@ -83,7 +83,7 @@ The worst 10 rated products are:
 
 
 The total amount of income was: 737916
-The average monthly income was: 61493.00
+The average monthly income was: 92239.50
 The total concreted sales of 2020 are: 274 
 
 The monthly sales are:
