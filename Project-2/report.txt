@@ -1,0 +1,71 @@
+         origin  destination  avg_total_value  total_sales     index
+1         China       Mexico     4.083333e+09          330  0.829592
+2   South Korea      Vietnam     1.719252e+09          497  0.710520
+3   Netherlands      Belgium     8.095355e+08          437  0.537902
+4           USA  Netherlands     2.580468e+08          436  0.469352
+5        Canada       Mexico     1.690000e+09          261  0.466122
+6   South Korea        Japan     1.531333e+09          279  0.465061
+7        France      Belgium     1.846023e+09          223  0.446451
+8           USA       Canada     2.412000e+09          136  0.426979
+9         Japan       Brazil     8.420388e+08          306  0.408208
+10      Germany        Italy     2.270500e+09          130  0.403530
+
+
+       origin           destination  avg_total_value  total_sales     index
+1   Singapore              Thailand     1.004250e+09          273  0.944990
+2       China              Thailand     9.577500e+08          200  0.787011
+3       Japan                Mexico     7.836000e+08          206  0.714678
+4       China  United Arab Emirates     1.119000e+09          114  0.704461
+5       China                 Japan     6.474000e+08          210  0.656821
+6    Malaysia              Thailand     6.964000e+08          195  0.652430
+7       Japan  United Arab Emirates     1.119000e+09           76  0.633829
+8   Australia                 Japan     9.200000e+08          102  0.586758
+9      Mexico                   USA     7.883333e+08          122  0.560814
+10    Germany                 China     3.320000e+08          233  0.548373
+
+
+                          total_value
+transport_mode direction             
+Sea            Exports    65592622000
+               Imports    34938000000
+Rail           Exports    34505043000
+Air            Exports    32785147000
+Road           Exports    27280486000
+Rail           Imports     9123000000
+Road           Imports     5990000000
+Air            Imports     5477000000
+
+
+                 total_value
+transport_mode              
+Sea             100530622000
+Rail             43628043000
+Air              38262147000
+Road             33270486000
+
+
+                      total_value  cumulative_percentage
+country                                                 
+China                 35549046000              16.481447
+USA                   22113306000              26.733741
+France                18614332000              35.363821
+Japan                 17776976000              43.605681
+Germany               16452233000              51.233357
+South Korea           14621146000              58.012094
+Thailand              13745000000              64.384628
+Russia                13223000000              70.515148
+Canada                11736000000              75.956258
+Mexico                10313755000              80.737979
+United Arab Emirates   7848000000              84.376512
+India                  5644000000              86.993215
+Italy                  5366684000              89.481347
+Netherlands            4120369000              91.391655
+Spain                  3418000000              92.976327
+United Kingdom         2777612000              94.264099
+Belgium                2588000000              95.463962
+Brazil                 2274000000              96.518247
+Poland                 2188000000              97.532659
+Switzerland            2154000000              98.531309
+Australia              1650000000              99.296291
+Singapore              1516684000              99.999465
+Austria                   1155000             100.000000
