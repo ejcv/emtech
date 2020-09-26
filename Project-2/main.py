@@ -26,9 +26,10 @@ def option_1():
 
     option_1_df_exports.index = option_1_df_exports.index + 1
     option_1_df_imports.index = option_1_df_imports.index + 1
-
+    print('Top 10 export routes:')
     print(option_1_df_exports[:10])
     print('\n')
+    print('Top 10 import routes:')
     print(option_1_df_imports[:10])
 
 

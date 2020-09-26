@@ -1,3 +1,4 @@
+Top 10 export routes:
          origin  destination  avg_total_value  total_sales     index
 1         China       Mexico     4.083333e+09          330  0.829592
 2   South Korea      Vietnam     1.719252e+09          497  0.710520
@@ -11,6 +12,7 @@
 10      Germany        Italy     2.270500e+09          130  0.403530
 
 
+Top 10 import routes:
        origin           destination  avg_total_value  total_sales     index
 1   Singapore              Thailand     1.004250e+09          273  0.944990
 2       China              Thailand     9.577500e+08          200  0.787011
